@@ -25,7 +25,7 @@ export const packageRepository: Record<string, Package> = {
     deps: ["typescript"],
   },
   a: {
-    deps: ["b", "c"],
+    deps: ["c", "b"],
   },
   b: {
     deps: ["d", "c"],
@@ -33,5 +33,14 @@ export const packageRepository: Record<string, Package> = {
   c: {
     deps: ["d"],
   },
-  d: {},
+  d: {
+    deps: ["e", "f"],
+  },
+  e: {
+    deps: ["g"],
+  },
+  f: {
+    deps: ["e"],
+  },
+  g: {},
 };

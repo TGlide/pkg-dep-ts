@@ -31,7 +31,7 @@ const tests: MainTest[] = [
   },
   {
     pkg: "a",
-    output: "d -> b -> c -> a",
+    output: "g -> e -> f -> d -> c -> b -> a",
   },
 ];
 
